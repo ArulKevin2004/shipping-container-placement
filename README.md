@@ -59,3 +59,11 @@ Convex Hull Points:
 
 ```
 
+### How It Works
+- Identifies the pivot point (lowest y-coordinate or leftmost if tied).
+- Sorts points by polar angle with respect to the pivot.
+- Uses a stack to construct the convex hull, ensuring only left turns (counterclockwise orientation).
+### Notes
+- Handles edge cases like collinear points.
+- Visualization uses `C` for containers and `*` for points on the convex hull.
+
